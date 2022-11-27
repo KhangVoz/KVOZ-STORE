@@ -83,6 +83,15 @@ header .nav ul li a:hover{
 	color: wheat;
 	cursor: default;
 }
+.bar{
+	display: none;
+}
+.nav-bar{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	font-size: 25px;
+}
 header .header-find #srch{
 	font-size: 17px;
 	border: none;
@@ -92,6 +101,17 @@ header .header-find #srch{
 	border-radius: 6px;
 	background-color: var(--bg-color);
 	color: white;
+}
+.hiden-header{
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	
+}
+.fa-delete-left{
+	color: white;
+	font-size: 24px;
 }
 input:focus ~ .fa-magnifying-glass{
 	color: wheat!important;
@@ -138,6 +158,7 @@ header .header-icon .acc-user .fa-user:hover{
 	z-index: 1;
 	background-color: #FFFFFF;
 	margin-bottom: 145px;
+	border-bottom: 1.5px solid var(--bg-color);
 }
 
 .container{
@@ -148,6 +169,8 @@ header .header-icon .acc-user .fa-user:hover{
 	height: 570px;
 	transition: 0.5s;
 	margin: auto;
+	border-right: 1.5px solid var(--bg-color);
+	border-left: 1.5px solid var(--bg-color);
 }
 .container .change-slide{
 	width: 9999px;

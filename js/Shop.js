@@ -120,3 +120,26 @@ function updateTotal(){
 }
 
 
+
+
+
+
+
+
+
+
+
+const navBar = document.getElementById('bars');
+const transHeader = document.getElementById('html-body');
+const removes = document.getElementById('removee');
+
+let carts = document.getElementById('cart-s');
+navBar.addEventListener('click', function(){
+	transHeader.style.transform = 'translateX(0)'
+	carts.classList.remove('atc')
+})
+removes.addEventListener('click', function(){
+	transHeader.style.transform = 'translateX(-100%)'
+})
+
+
