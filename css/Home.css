@@ -1,0 +1,164 @@
+:root{
+	--bg-color: #1E1E23;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;	
+}
+
+header{
+	display: flex;
+	position: fixed;
+	justify-content: space-around;
+	width: 100%;
+	height: 100px;
+	background-color: var(--bg-color);
+	box-shadow: 0 1.5px 5px hsl(0, 0%, 47%);
+	z-index: 5;
+}
+header .header-logo{
+	flex-basis: 120px;
+	margin-left: 40px;
+	align-self: center;
+}
+header .nav{
+	flex-basis: 665px;
+	align-self: center;
+}
+header .header-find{
+	flex-basis: 205px;
+	align-self: center;
+	border: 1px solid whitesmoke;
+	border-radius: 20px;
+	padding: 5px;
+	transition: all 0.2s ease-in-out;
+}
+header .header-icon{
+	flex-basis: 100px;
+	align-self: center;
+}
+header .header-logo .logo{
+	width: 100px;
+	height: 100px;
+}
+header .nav ul li{
+	display: inline-block;
+	text-decoration: none;
+	list-style-type: none;
+	text-transform: uppercase;
+	margin-left: 30px;
+	transition: all 0.3s ease;
+}
+header .nav ul li .line{
+	width: 0px;
+	height: 2px;
+	border-radius: 3px;
+	background-color: wheat;
+	margin: auto;
+	transition: all 0.3s ease;
+}
+header .nav ul li:hover .line{
+	width: 25px;
+	cursor: default;
+}
+header .nav ul li .active{
+	width: 25px;
+	height: 2px;
+	border-radius: 3px;
+	background-color: wheat;
+	margin: auto;
+}
+header .nav ul li a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 18px;
+	transition: all 0.2s linear;
+}
+header .nav ul li a.nav-active{
+	color: wheat;
+}
+header .nav ul li a:hover{
+	color: wheat;
+	cursor: default;
+}
+header .header-find #srch{
+	font-size: 17px;
+	border: none;
+	outline: none;
+	margin-left: 8px;
+	width: 150px;
+	border-radius: 6px;
+	background-color: var(--bg-color);
+	color: white;
+}
+input:focus ~ .fa-magnifying-glass{
+	color: wheat!important;
+}
+header .header-find .fa-magnifying-glass{
+	color: whitesmoke;
+	margin-left: 5px;
+	transition: all 0.2s ease-in-out;
+}
+header .header-icon .acc-user, .cart-shop{
+	display: inline-block;
+}
+
+header .header-icon .cart-shop .fa-cart-shopping{
+	color: whitesmoke;
+	font-size: 21px;
+	margin-right: 21px;
+	transition: all 0.15s linear;
+	cursor: pointer;
+}
+
+header .header-icon .cart-shop .fa-cart-shopping:hover{
+	color: wheat;
+}
+header .header-icon .acc-user .fa-user{
+	padding: 12px 14px;
+	border: 2px solid whitesmoke;
+	font-size: 21px;
+	border-radius: 50%;
+	color: whitesmoke;
+	transition: all 0.2s ease-in-out;
+}
+header .header-icon .acc-user .fa-user:hover{
+	cursor: pointer;
+	border: 2px solid antiquewhite;
+	color: wheat;
+}
+.box-content{
+	position: relative;
+	top: 100px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 1;
+	background-color: #FFFFFF;
+	margin-bottom: 145px;
+}
+
+.container{
+	background-color: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	width: 1190px;
+	height: 570px;
+	transition: 0.5s;
+	margin: auto;
+}
+.container .change-slide{
+	width: 9999px;
+	transition: 1.1s;
+}
+.container .change-slide a{
+	cursor: pointer;
+	text-decoration: none;
+}
+.container .change-slide img{
+	float: left;
+	width: 1190px;
+	height: 570px;
+}
